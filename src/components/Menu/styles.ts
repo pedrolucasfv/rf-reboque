@@ -1,61 +1,63 @@
-import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
-import theme from  '../../styles/theme'
+import styled, { css } from "styled-components";
+import media from "styled-media-query";
+import theme from "../../styles/theme";
 
 export const Wrapper = styled.menu`
   background: linear-gradient(
-      to left top,
-      #e3e3e3,
-      #dedede,
-      #e5e5e5,
-      #ececec,
-      #f5f5f5
-    );
-    svg {
-      color: black;
-    }  
+    to left top,
+    #e3e3e3,
+    #dedede,
+    #e5e5e5,
+    #ececec,
+    #f5f5f5
+  );
+  svg {
+    color: black;
+  }
   display: flex;
-    align-items: center;
-    padding: 0.8rem 0;
-    padding-left: 1.2rem;
-    position: relative;
-    height: 6rem;
-    border-bottom: 0.3rem solid ${theme.colors.primary};
-    ${media.lessThan('medium')`
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+  height: 6rem;
+  border-bottom: 0.4rem solid ${theme.colors.primary};
+  ${media.lessThan("medium")`
      padding-right: 1.2rem;
      height: 6rem;
     `}
-    ${media.greaterThan('huge')`
-        padding: 0 29rem;
-    `}
-`
+    @media (min-width: 1500px) {
+    padding: 0 29rem;
+  }
+`;
 export const LogoWrapper = styled.div`
   margin-left: 2rem;
-  ${media.lessThan('medium')`
+  ${media.lessThan("medium")`
   position: absolute ;
   margin-left: 10.5rem;
   transform: translateX(-50%);
  `}
-`
+`;
 type ImageProps = {
-  src: string
-}
+  src: string;
+};
 export const Logo = styled.div<ImageProps>`
   ${({ src }) => css`
     background: url(${src});
-    height: 2rem;
-    width: 10rem;
+    height: 5rem;
+    width: 7rem;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   `}
-`
+`;
 
 export const IconWrapper = styled.div`
   cursor: pointer;
   width: 2.4rem;
   height: 2.4rem;
   color: black;
-`
+`;
 
 export const MenuGroup = styled.div`
   display: flex;
@@ -64,25 +66,26 @@ export const MenuGroup = styled.div`
   align-items: center;
   > div {
     margin: 0 1.5rem;
-    ${media.lessThan('medium')`
+    ${media.lessThan("medium")`
     margin: 0 0.5rem
     `}
   }
-  ${media.greaterThan('medium')`
+  ${media.greaterThan("medium")`
     padding: 7rem;
     margin-right: 2rem;
     > button { 
     padding: 1rem 2rem;
    }
   `}
-`
+
+`;
 
 export const MenuNav = styled.div`
-  ${media.greaterThan('medium')`
+  ${media.greaterThan("medium")`
   margin-left: 2rem;
   `}
   display: flex;
-`
+`;
 
 export const MenuLink = styled.div`
   position: relative;
@@ -98,11 +101,11 @@ export const MenuLink = styled.div`
     color: ${theme.colors.primary};
     background-color: ${theme.colors.primary}33;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       height: 1.5rem;
-      ${media.lessThan('medium')`
+      ${media.lessThan("medium")`
           height: 0.4rem;
       `}
       border-bottom: 0.5rem solid ${theme.colors.primary};
@@ -119,11 +122,11 @@ export const MenuLink = styled.div`
       }
     }
   }
-`
+`;
 
 type MenuToggleProps = {
-  isOpenMenu: boolean
-}
+  isOpenMenu: boolean;
+};
 export const MenuToggle = styled.nav<MenuToggleProps>`
   ${({ isOpenMenu }) => css`
     background-color: white;
@@ -140,7 +143,7 @@ export const MenuToggle = styled.nav<MenuToggleProps>`
     height: 100vh;
     transition: opacity 0.3s ease-in-out;
     opacity: ${isOpenMenu ? 1 : 0};
-    pointer-events: ${isOpenMenu ? 'all' : 'none'};
+    pointer-events: ${isOpenMenu ? "all" : "none"};
 
     > svg {
       margin: 1.5rem;
@@ -161,11 +164,11 @@ export const MenuToggle = styled.nav<MenuToggleProps>`
       font-weight: bold;
       font-size: 1.2rem;
       margin-bottom: 1rem;
-      transform: ${isOpenMenu ? 'translateY(0)' : 'translateY(3rem)'};
+      transform: ${isOpenMenu ? "translateY(0)" : "translateY(3rem)"};
       transition: transform 0.3s ease-in-out;
     }
   `}
-`
+`;
 
 export const Sombra = styled.div`
   position: fixed;
@@ -175,7 +178,7 @@ export const Sombra = styled.div`
   top: 0;
   background: rgba(0, 0, 0, 0.4);
   z-index: 10;
-`
+`;
 
 /*
 background: linear-gradient(

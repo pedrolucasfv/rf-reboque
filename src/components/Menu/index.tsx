@@ -1,20 +1,19 @@
-import { useState } from 'react'
-import { Link } from 'react-scroll'
-import { MenuOutline as MenuIcon } from '@styled-icons/evaicons-outline/MenuOutline'
-import { CloseOutline as CloseIcon } from '@styled-icons/evaicons-outline/CloseOutline'
+import { useState } from "react";
+import { Link } from "react-scroll";
+import { MenuOutline as MenuIcon } from "@styled-icons/evaicons-outline/MenuOutline";
+import { CloseOutline as CloseIcon } from "@styled-icons/evaicons-outline/CloseOutline";
 
-import MediaMatch from '../MediaMatch/index'
-import * as S from './styles'
-
+import MediaMatch from "../MediaMatch/index";
+import * as S from "./styles";
 
 const Menu = () => {
-  const [isOpenMenu, setIsOpenMenu] = useState(false)
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   return (
     <S.Wrapper>
-      <MediaMatch lessThan='medium'>
+      <MediaMatch lessThan="medium">
         <S.IconWrapper onClick={() => setIsOpenMenu(true)}>
-          <MenuIcon aria-label="Open Menu" />
+          <MenuIcon size={22} aria-label="Open Menu" />
         </S.IconWrapper>
       </MediaMatch>
 
@@ -26,7 +25,7 @@ const Menu = () => {
           offset={-6}
           duration={500}
         >
-          <S.Logo src='' />
+          <S.Logo src='img/logo-menu.png' />
         </Link>
       </S.LogoWrapper>
 
@@ -106,6 +105,6 @@ const Menu = () => {
         </S.MenuNav>
       </S.MenuToggle>
     </S.Wrapper>
-  )
-}
-export default Menu
+  );
+};
+export default Menu;
