@@ -14,9 +14,8 @@ export const Wrapper = styled.main`
     color: #282828;
     padding: 2rem 1rem;
     border: 0.4rem solid ${theme.colors.secondary};
-    margin: 3rem 0;
     width: 40rem;
-    height: 30rem;
+    height: 25rem;
     display: flex;
     flex-direction: column;
   `}

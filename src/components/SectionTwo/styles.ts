@@ -47,8 +47,8 @@ export const Heading = styled.h2`
   `}
 `
 export const Box = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-bottom: 10rem;
+margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
 `

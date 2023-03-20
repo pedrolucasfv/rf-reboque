@@ -21,7 +21,7 @@ export const Wrapper = styled.menu`
   padding-left: 1.2rem;
   position: relative;
   height: 6rem;
-  border-bottom: 0.4rem solid ${theme.colors.primary};
+  border-bottom: 0.4rem solid ${theme.colors.secondary};
   ${media.lessThan("medium")`
      padding-right: 1.2rem;
      height: 6rem;

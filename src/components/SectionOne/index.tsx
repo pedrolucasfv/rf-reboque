@@ -16,9 +16,7 @@ const SectionOne = () => {
         </S.Text>
         <S.Button>
           <Whatsapp size={22} />
-          <S.ButtonText>
-            Clique aqui para entrar em contato no whatsapp
-          </S.ButtonText>
+            WHATSAPP
         </S.Button>
       </S.Info>
       <S.Image src="/img/logo.jpg" />

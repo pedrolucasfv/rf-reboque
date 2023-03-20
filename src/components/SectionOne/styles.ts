@@ -11,6 +11,7 @@ export const Wrapper = styled.main`
     #131313,
     #0a0a0a
   );
+
   color: white;
   height: calc(100vh - 5rem);
   ${media.greaterThan("medium")`
@@ -78,21 +79,29 @@ export const Info = styled.div`
 export const Button = styled.a`
   ${({ theme }) => css`
     display: flex;
-    color: ${theme.colors.white};
-    font-weight: ${theme.font.bold};
-    font-size: ${theme.font.sizes.medium};
+    justify-content: space-around;
     border-radius: 0.5rem;
     cursor: pointer;
     margin: 3rem auto;
-    padding: ${theme.spacings.xsmall} ${theme.spacings.medium};
+    width: 30rem;
+    padding: ${theme.spacings.xsmall} ${theme.spacings.small};
     background-color: ${theme.colors.primary};
     border: 0.2rem solid ${theme.colors.white};
+    font-size: ${theme.font.sizes.small};
+    font-weight: 800;
+    color: ${theme.colors.white};
+    letter-spacing: 0.5rem;
+    transition: 0.5s letter-spacing;
+    
     :hover {
-      background-color: ${theme.colors.secondary};
+      background: radial-gradient(
+        circle,
+        rgba(234, 187, 0, 1) 0%,
+        rgba(188, 24, 33, 1) 100%
+      );
+    letter-spacing: 1rem;
+
     }
   `}
 `;
 
-export const ButtonText = styled.h4`
-  margin-left: 2rem;
-`;
