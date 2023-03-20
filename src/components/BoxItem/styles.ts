@@ -14,7 +14,7 @@ export const Wrapper = styled.main`
     color: #282828;
     padding: 2rem 1rem;
     border: 0.4rem solid ${theme.colors.secondary};
-    width: 40rem;
+    width: 35rem;
     height: 25rem;
     display: flex;
     flex-direction: column;

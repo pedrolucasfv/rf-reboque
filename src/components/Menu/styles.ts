@@ -33,9 +33,7 @@ export const Wrapper = styled.menu`
 export const LogoWrapper = styled.div`
   margin-left: 2rem;
   ${media.lessThan("medium")`
-  position: absolute ;
-  margin-left: 10.5rem;
-  transform: translateX(-50%);
+  margin: 0 auto;
  `}
 `;
 type ImageProps = {
@@ -54,8 +52,6 @@ export const Logo = styled.div<ImageProps>`
 
 export const IconWrapper = styled.div`
   cursor: pointer;
-  width: 2.4rem;
-  height: 2.4rem;
   color: black;
 `;
 

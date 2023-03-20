@@ -14,7 +14,6 @@ export const Wrapper = styled.main`
     color: white; ;
     ${media.greaterThan('medium')`
     padding: 3rem 10rem;
-
     `}
     display: flex;
     flex-direction: column;
@@ -47,8 +46,11 @@ export const Heading = styled.h2`
   `}
 `
 export const Box = styled.div`
-margin: 0 auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  ${media.lessThan('medium')`
+  grid-template-columns: 1fr;
+  `}
   grid-gap: 10rem;
 `
