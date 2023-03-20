@@ -23,3 +23,7 @@ export const Background = styled.div`
 export const SectionOne = styled.div`
   margin-top: 11rem;
 `
+
+export const SectionTwo = styled.div`
+  margin-top: 6rem;
+`

@@ -1,5 +1,7 @@
+import SectionTwo from "@/components/SectionTwo";
 import Menu from "../../components/Menu";
 import SectionOne from "../../components/SectionOne";
+
 import * as S from "./styles";
 
 const LandingPage = () => {
@@ -11,6 +13,9 @@ const LandingPage = () => {
       <S.SectionOne>
         <SectionOne />
       </S.SectionOne>
+      <S.SectionTwo>
+      <SectionTwo />
+      </S.SectionTwo>
       <S.Background />
     </S.Wrapper>
   );

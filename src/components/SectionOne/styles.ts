@@ -62,7 +62,7 @@ export const Heading = styled.h2`
       bottom: -0.5rem;
       content: "";
       width: 5rem;
-      border-bottom: 0.5rem solid ${theme.colors.primary};
+      border-bottom: 0.5rem solid ${theme.colors.secondary};
     }
   `}
 `;
@@ -95,4 +95,4 @@ export const Button = styled.a`
 
 export const ButtonText = styled.h4`
   margin-left: 2rem;
-`
+`;
