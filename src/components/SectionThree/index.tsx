@@ -23,11 +23,9 @@ const SectionThree = () => {
       </S.HeadingContent>
       <MediaMatch lessThan="medium">
         <S.BoxMobile>
-          <S.Image
-            src={`/img/reboque-${imageNumber}.jpeg`}
-            onClick={() => handleImage()}
-          />
+          <S.Image src={`/img/reboque-${imageNumber}.jpeg`} />
         </S.BoxMobile>
+        <S.Button onClick={() => handleImage()}>Passar foto</S.Button>
       </MediaMatch>
       <MediaMatch greaterThan="medium">
         <S.Box>

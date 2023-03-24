@@ -96,3 +96,24 @@ export const ImageContent = styled.div``;
 export const Video = styled.div`
   background-color: white;
 `;
+
+export const Button = styled.a`
+  ${({ theme }) => css`
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 3rem auto;
+    width: 30rem;
+    padding: ${theme.spacings.xsmall} ${theme.spacings.small};
+    background-color: ${theme.colors.primary};
+    border: 0.2rem solid ${theme.colors.white};
+    font-size: ${theme.font.sizes.small};
+    font-weight: 800;
+    color: ${theme.colors.white};
+    letter-spacing: 0.5rem;
+    transition: 0.5s letter-spacing;
+    text-decoration: none;
+
+  `}
+`;

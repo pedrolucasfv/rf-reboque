@@ -7,21 +7,17 @@ const Footer = () => (
       <S.ContentInfo>
         <S.Heading type="primary">Localização</S.Heading>
         <S.Text>
-          <span>Rua:</span> Demerval Teixeira da Fonseca
+          <span>Endereço:</span> Sitio nossa senhora
         </S.Text>
         <S.Text>
-          <span>Número:</span> 251
+          <span>Cidade:</span> Apiacá
         </S.Text>
         <S.Text>
-          <span>Cidade:</span> Bom Jesus do Itabapoana
-        </S.Text>
-        <S.Text>
-          <span>Cep:</span> 28360-000
+          <span>Cep:</span> 29450-000
         </S.Text>
       </S.ContentInfo>
       <S.ContentInfo>
         <S.Heading type="tertiary">Redes Sociais</S.Heading>
-        <S.Subtitle className="primeiroItem">Projeto A Rede</S.Subtitle>
         <S.SocialNetwork>
         <InstagramIcon size={50} />
         </S.SocialNetwork>
@@ -31,7 +27,7 @@ const Footer = () => (
       <S.Image src="/img/logo.jpg" />
     </S.ContentImage>
     <S.CopyrightContent>
-      <S.Copyright>Projeto A Rede 2023 © Todos direitos reservados</S.Copyright>
+      <S.Copyright>RF REBOQUE 2023 © Todos direitos reservados</S.Copyright>
       <S.Copyright>
         <span>Feito por Pedro Lucas Ferreira Vieira</span>
       </S.Copyright>

@@ -16,10 +16,6 @@ const SectionTwo = () => {
       title: "Tem limite de distância em que a carga pode ser transportada?",
       text: "Não, a carga pode ser transporta para todo o Brasil, mas podendo ter alterações nos valores. Tudo pode ser combinado no contato",
     },
-    {
-      title: "Tem mais alguma ideia de pergunta?",
-      text: "Não, to sem criatividade e vou só encher linguiça aqui pra testar mais um cartãozinho daquele",
-    },
   ];
   return (
     <S.Wrapper id="sectionTwo">
