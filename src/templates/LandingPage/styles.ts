@@ -27,3 +27,11 @@ export const SectionOne = styled.div`
 export const SectionTwo = styled.div`
   margin-top: 6rem;
 `
+
+export const SectionThree = styled.div`
+  margin-top: 6rem;
+`
+
+export const Footer = styled.div`
+  margin-top: 6rem;
+`
