@@ -38,7 +38,7 @@ const Menu = () => {
             offset={-6}
             duration={500}
           >
-            <S.MenuLink>Home</S.MenuLink>
+            <S.MenuLink>Início</S.MenuLink>
           </Link>
           <Link
             to="sectionTwo"
@@ -47,7 +47,7 @@ const Menu = () => {
             offset={-46}
             duration={500}
           >
-            <S.MenuLink>Sobre</S.MenuLink>
+            <S.MenuLink>Dúvidas</S.MenuLink>
           </Link>
 
           <Link
@@ -57,7 +57,7 @@ const Menu = () => {
             offset={-66}
             duration={500}
           >
-            <S.MenuLink>Contato</S.MenuLink>
+            <S.MenuLink>Galeria</S.MenuLink>
           </Link>
         </S.MenuNav>
       </MediaMatch>
@@ -78,7 +78,7 @@ const Menu = () => {
             duration={500}
             onClick={() => setIsOpenMenu(false)}
           >
-            <S.MenuLink>Home</S.MenuLink>
+            <S.MenuLink>Início</S.MenuLink>
           </Link>
 
           <Link
@@ -89,7 +89,7 @@ const Menu = () => {
             duration={500}
             onClick={() => setIsOpenMenu(false)}
           >
-            <S.MenuLink>Sobre</S.MenuLink>
+            <S.MenuLink>Dúvidas</S.MenuLink>
           </Link>
 
           <Link
@@ -100,7 +100,7 @@ const Menu = () => {
             duration={500}
             onClick={() => setIsOpenMenu(false)}
           >
-            <S.MenuLink>Contato</S.MenuLink>
+            <S.MenuLink>Galeria</S.MenuLink>
           </Link>
         </S.MenuNav>
       </S.MenuToggle>

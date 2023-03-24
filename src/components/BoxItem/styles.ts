@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import media from "styled-media-query";
 import theme from "../../styles/theme";
 
 export const Wrapper = styled.main`
@@ -18,6 +19,9 @@ export const Wrapper = styled.main`
     height: 25rem;
     display: flex;
     flex-direction: column;
+    @media (max-width: 400px) {
+      width: 32rem;
+    }
   `}
 `;
 

@@ -14,9 +14,9 @@ const SectionOne = () => {
           horário. Estamos disponíveis 24 horas por dia, 7 dias por semana, para
           ajudar com qualquer emergência automotiva. Aguardamos sua mensagem!
         </S.Text>
-        <S.Button>
+        <S.Button href="https://wa.me/5522997133435">
           <Whatsapp size={22} />
-            WHATSAPP
+          WHATSAPP
         </S.Button>
       </S.Info>
       <S.Image src="/img/logo.jpg" />

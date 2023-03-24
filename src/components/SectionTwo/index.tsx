@@ -1,4 +1,5 @@
 import BoxItem from "../BoxItem";
+import { Container } from "../Container";
 import * as S from "./styles";
 
 const SectionTwo = () => {
@@ -22,14 +23,16 @@ const SectionTwo = () => {
   ];
   return (
     <S.Wrapper id="sectionTwo">
-      <S.HeadingContent>
-        <S.Heading>Perguntas Frequentes</S.Heading>
-      </S.HeadingContent>
-      <S.Box>
-        {boxItem.map(({ title, text }, index) => (
-          <BoxItem title={title} text={text} key={index} />
-        ))}
-      </S.Box>
+      <Container>
+        <S.HeadingContent>
+          <S.Heading>Perguntas Frequentes</S.Heading>
+        </S.HeadingContent>
+        <S.Box>
+          {boxItem.map(({ title, text }, index) => (
+            <BoxItem title={title} text={text} key={index} />
+          ))}
+        </S.Box>
+      </Container>
     </S.Wrapper>
   );
 };

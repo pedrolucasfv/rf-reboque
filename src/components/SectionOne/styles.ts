@@ -29,9 +29,23 @@ export const Wrapper = styled.main`
     @media (min-width: 1500px) {
     padding: 0 29rem;
   }
+  border-top: 0.5rem solid ${theme.colors.secondary};
+  border-bottom: 0.5rem solid ${theme.colors.secondary};
+
 `;
 
-export const Text = styled.h2``;
+export const Text = styled.h2`
+    font-size: 1rem;
+    margin-bottom: 5rem;
+    font-weight: 500;
+  @media (min-width: 1500px) {
+    font-size: 2.6rem;
+  }
+  ${media.lessThan("medium")`
+      font-size: 2rem;
+      text-align: center;
+    `}
+`;
 
 type ImageProps = {
   src: string;
@@ -40,35 +54,49 @@ export const Image = styled.div<ImageProps>`
   ${({ src }) => css`
     height: 100%;
     width: 40rem;
+    @media (min-width: 1500px) {
+      width: 60rem;
+    }
     ${media.lessThan("medium")`
       width: 35rem;
     `}
-    grid-column: 4;
+    grid-column: 4/6;
     grid-row: 2;
     background-image: url(${src});
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    border: solid 0.5rem ${theme.colors.secondary};
   `}
 `;
+
 export const Heading = styled.h2`
   ${({ theme }) => css`
     position: relative;
     margin-bottom: ${theme.spacings.medium};
-    font-size: 3rem;
+    ${media.lessThan("medium")`
+    font-size: 4rem;
+
+    `}
+    @media (min-width: 1500px) {
+      font-size: 6rem;
+    }
+    letter-spacing: 0.5rem;
     &::after {
       position: absolute;
       left: 0;
       bottom: -0.5rem;
       content: "";
+      width: 10rem;
+      border-bottom: 1rem solid ${theme.colors.secondary};
+      ${media.lessThan("medium")`
       width: 5rem;
       border-bottom: 0.5rem solid ${theme.colors.secondary};
+    `}
     }
   `}
 `;
 export const Info = styled.div`
-  grid-column: 2;
+  grid-column: 1/3;
   grid-row: 2;
   display: flex;
   flex-direction: column;
@@ -92,16 +120,9 @@ export const Button = styled.a`
     color: ${theme.colors.white};
     letter-spacing: 0.5rem;
     transition: 0.5s letter-spacing;
-    
+    text-decoration: none;
     :hover {
-      background: radial-gradient(
-        circle,
-        rgba(234, 187, 0, 1) 0%,
-        rgba(188, 24, 33, 1) 100%
-      );
-    letter-spacing: 1rem;
-
+      letter-spacing: 1rem;
     }
   `}
 `;
-
