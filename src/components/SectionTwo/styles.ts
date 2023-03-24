@@ -12,7 +12,6 @@ export const Wrapper = styled.main`
       #0a0a0a
     );
     color: white;
-    min-height: calc(100vh - 5rem);
     
     ${media.greaterThan("medium")`
     padding: 3rem 10rem;

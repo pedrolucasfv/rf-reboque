@@ -5,16 +5,12 @@ import * as S from "./styles";
 const SectionTwo = () => {
   const boxItem = [
     {
-      title: "Qual peso máximo que o caminhão suporta?",
-      text: "Depende do tipo de carga, em tese, o caminhão suporta 320kgs, mas a carga máxima pode ser variavel em relação ao que esteja carregando. O recorde desse caminhão foi 305kgs, um trator que foi carregado com sucesso por 900kms",
-    },
-    {
-      title: "Quais as medidas máximas que a carga pode ter?",
-      text: "O caminhão suporta carregar uma carga com até 5 metros de altura, 2.5 metros de largura e 20 metros de comprimento.",
+    title: "Qual o tamanho da prancha do caminhão?",
+      text: "Temos prancha de 7 metros e meio e prancha de 10 metros e meio.",
     },
     {
       title: "Tem limite de distância em que a carga pode ser transportada?",
-      text: "Não, a carga pode ser transporta para todo o Brasil, mas podendo ter alterações nos valores. Tudo pode ser combinado no contato",
+      text: "Não, a carga pode ser pega em qualquer lugar do Brasil e ser transportada para todo o Brasil",
     },
   ];
   return (

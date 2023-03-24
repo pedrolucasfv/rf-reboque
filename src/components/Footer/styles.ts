@@ -144,7 +144,9 @@ export const ContentInfo = styled.div`
 export const Copyright = styled.h2`
   color: #a2a2a2;
   font-size: 1.7rem;
-
+  ${media.lessThan("medium")`
+  font-size: 1.4rem;
+    `}
   span {
     font-size: 1.4rem;
   }
@@ -157,4 +159,7 @@ export const CopyrightContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  ${media.lessThan("medium")`
+  margin-top: 3rem;
+    `}
 `;

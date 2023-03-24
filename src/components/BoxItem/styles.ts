@@ -35,7 +35,7 @@ export const Title = styled.h2`
 `;
 
 export const Text = styled.h4`
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 550;
   margin: 0rem 1rem;
 
