@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const Wrapper = styled.main``;
 
@@ -21,7 +22,11 @@ export const Background = styled.div`
 `;
 
 export const SectionOne = styled.div`
-  margin-top: 16rem;
+${media.greaterThan('medium')`
+margin-top: 16rem;
+`}
+margin-top: 14rem;
+
 `
 
 export const SectionTwo = styled.div`

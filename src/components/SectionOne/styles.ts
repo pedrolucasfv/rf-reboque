@@ -51,6 +51,7 @@ export const ImageWrapper = styled.div`
     grid-column: 4/6;
     grid-row: 2;
     width: 40rem;
+    height: 100%;
     @media (min-width: 1500px) {
       width: 60rem;
     }
@@ -59,7 +60,6 @@ export const ImageWrapper = styled.div`
       margin-left: 1.5rem;
       margin-bottom: 1.5rem;
     `}
-       height: 58rem;
     position: relative;
     border: solid 0.5rem ${theme.colors.secondary};
     border-radius: 1rem;
