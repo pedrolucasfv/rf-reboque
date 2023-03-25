@@ -71,25 +71,16 @@ export const Heading = styled.h2`
   ${({ theme }) => css`
     position: relative;
     margin-bottom: ${theme.spacings.medium};
-    ${media.lessThan("medium")`
-    font-size: 4rem;
+    font-size: 3rem;
 
-    `}
-    @media (min-width: 1500px) {
-      font-size: 6rem;
-    }
     letter-spacing: 0.5rem;
     &::after {
       position: absolute;
       left: 0;
       bottom: -0.5rem;
       content: "";
-      width: 10rem;
-      border-bottom: 1rem solid ${theme.colors.secondary};
-      ${media.lessThan("medium")`
       width: 5rem;
       border-bottom: 0.5rem solid ${theme.colors.secondary};
-    `}
     }
   `}
 `;
