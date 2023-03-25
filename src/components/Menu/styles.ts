@@ -20,13 +20,13 @@ export const Wrapper = styled.menu`
   padding: 0.8rem 0;
   padding-left: 1.2rem;
   position: relative;
-  height: 6rem;
+  height: 10rem;
   border-bottom: 0.4rem solid ${theme.colors.secondary};
   ${media.lessThan("medium")`
      padding-right: 1.2rem;
      height: 6rem;
     `}
-    @media (min-width: 1500px) {
+  @media (min-width: 1500px) {
     padding: 0 29rem;
   }
 `;
@@ -42,8 +42,8 @@ type ImageProps = {
 export const Logo = styled.div<ImageProps>`
   ${({ src }) => css`
     background: url(${src});
-    height: 5rem;
-    width: 7rem;
+    height: 10rem;
+    width: 14rem;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -73,7 +73,6 @@ export const MenuGroup = styled.div`
     padding: 1rem 2rem;
    }
   `}
-
 `;
 
 export const MenuNav = styled.div`
@@ -86,37 +85,20 @@ export const MenuNav = styled.div`
 export const MenuLink = styled.div`
   position: relative;
   color: gray;
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin: 0.3rem 1rem 0;
   text-decoration: none;
   text-align: center;
   font-weight: bold;
   padding: 1.8rem 2rem;
   cursor: pointer;
+  letter-spacing: 0.2rem;
+
+  transition: letter-spacing 0.5s, font-size 0.5s;
   &:hover {
     color: ${theme.colors.primary};
-    background-color: ${theme.colors.primary}33;
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 1.5rem;
-      ${media.lessThan("medium")`
-          height: 0.4rem;
-      `}
-      border-bottom: 0.5rem solid ${theme.colors.primary};
-      animation: hoverAnimation 0.2s forwards;
-    }
-    @keyframes hoverAnimation {
-      from {
-        width: 0;
-        left: 50%;
-      }
-      to {
-        width: 100%;
-        left: 0;
-      }
-    }
+    letter-spacing: 0.6rem;
+    font-size: 2.5rem;
   }
 `;
 

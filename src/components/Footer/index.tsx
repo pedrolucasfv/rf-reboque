@@ -1,5 +1,6 @@
 import * as S from "./styles";
 import { CloseOutline as InstagramIcon } from "@styled-icons/evaicons-outline/CloseOutline";
+import Image from "next/image";
 
 const Footer = () => (
   <S.Wrapper>
@@ -23,9 +24,15 @@ const Footer = () => (
         </S.SocialNetwork>
       </S.ContentInfo>
     </S.Info>
-    <S.ContentImage>
-      <S.Image src="/img/logo.jpg" />
-    </S.ContentImage>
+   
+    <S.ImageWrapper>
+        <Image
+          src='/img/logo.jpg'
+          alt='Logo da RF reboque'
+          layout="fill"
+          objectFit="cover"
+        />
+      </S.ImageWrapper>
     <S.CopyrightContent>
       <S.Copyright>RF REBOQUE 2023 © Todos direitos reservados</S.Copyright>
       <S.Copyright>

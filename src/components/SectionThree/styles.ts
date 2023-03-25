@@ -26,7 +26,7 @@ export const Wrapper = styled.main`
       padding: 5rem 29rem;
     }
     border-top: 0.5rem solid ${theme.colors.secondary};
-  border-bottom: 0.5rem solid ${theme.colors.secondary};
+    border-bottom: 0.5rem solid ${theme.colors.secondary};
   `}
 `;
 export const HeadingContent = styled.div`
@@ -69,7 +69,7 @@ type ImageProps = {
   src: string;
 };
 
-export const Image = styled.div<ImageProps>`
+export const Image = styled.img<ImageProps>`
   ${({ src, theme }) => css`
     margin-right: 3rem;
     margin-bottom: 3rem;
@@ -82,10 +82,24 @@ export const Image = styled.div<ImageProps>`
     @media (max-width: 400px) {
       width: 32rem;
     }
-    background-image: url(${src});
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  `}
+`;
+export const ImageWrapper = styled.div`
+  ${({ theme }) => css`
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    height: 52.5rem;
+    width: 30rem;
+    ${media.lessThan("medium")`
+      width: 35rem;
+    `}
+    @media (max-width: 400px) {
+      width: 32rem;
+    }
+    position: relative;
+    ${media.greaterThan("medium")`
+      height: 58rem;
+    `}
     border: solid 0.5rem ${theme.colors.secondary};
     border-radius: 1rem;
     transition: 2s opacity;
@@ -114,6 +128,5 @@ export const Button = styled.a`
     letter-spacing: 0.5rem;
     transition: 0.5s letter-spacing;
     text-decoration: none;
-
   `}
 `;

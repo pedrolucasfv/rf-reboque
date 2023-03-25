@@ -31,13 +31,12 @@ export const Wrapper = styled.main`
   }
   border-top: 0.5rem solid ${theme.colors.secondary};
   border-bottom: 0.5rem solid ${theme.colors.secondary};
-
 `;
 
 export const Text = styled.h2`
-    font-size: 1rem;
-    margin-bottom: 5rem;
-    font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+  font-weight: 500;
   @media (min-width: 1500px) {
     font-size: 2.6rem;
   }
@@ -47,25 +46,24 @@ export const Text = styled.h2`
     `}
 `;
 
-type ImageProps = {
-  src: string;
-};
-export const Image = styled.div<ImageProps>`
-  ${({ src }) => css`
-    height: 100%;
+export const ImageWrapper = styled.div`
+  ${({ theme }) => css`
+    grid-column: 4/6;
+    grid-row: 2;
     width: 40rem;
     @media (min-width: 1500px) {
       width: 60rem;
     }
     ${media.lessThan("medium")`
       width: 35rem;
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
     `}
-    grid-column: 4/6;
-    grid-row: 2;
-    background-image: url(${src});
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+       height: 58rem;
+    position: relative;
+    border: solid 0.5rem ${theme.colors.secondary};
+    border-radius: 1rem;
+    transition: 2s opacity;
   `}
 `;
 

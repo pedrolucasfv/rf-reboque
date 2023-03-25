@@ -60,31 +60,27 @@ export const SocialNetwork = styled.div`
   justify-content: space-around;
   margin-bottom: 1.5rem;
 `;
-type ImageProps = {
-  src: string;
-};
 
-export const Image = styled.div<ImageProps>`
-  ${({ src }) => css`
+export const ImageWrapper = styled.div`
+  ${({ theme }) => css`
+  
+    grid-column: 2;
+    grid-row: 1/3;
     ${media.lessThan("medium")`
     height: 35rem;
     `}
-    height: 40rem;
-    width: 40rem;
-    background-image: url(${src});
-    background-position: center;
-    background-size: cover;
-    margin: 0 5rem;
+    height: 30rem;
+    width: 30rem;
+    position: relative;
+    border: solid 0.5rem ${theme.colors.secondary};
+    border-radius: 1rem;
+    transition: 2s opacity;
+
   `}
 `;
 
-export const ContentImage = styled.div`
-  grid-column: 2;
-  grid-row: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+
+
 type HeadingProps = {
   type: "primary" | "secondary" | "tertiary" | "quaternary";
 };

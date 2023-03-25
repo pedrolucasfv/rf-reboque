@@ -1,6 +1,7 @@
 import * as S from "./styles";
 import React from "react";
 import { Whatsapp } from "@styled-icons/bootstrap/Whatsapp";
+import Image from "next/image";
 
 const SectionOne = () => {
   return (
@@ -19,7 +20,14 @@ const SectionOne = () => {
           WHATSAPP
         </S.Button>
       </S.Info>
-      <S.Image src="/img/logo.jpg" />
+      <S.ImageWrapper>
+        <Image
+          src='/img/logo.jpg'
+          alt='Logo da RF reboque'
+          layout="fill"
+          objectFit="cover"
+        />
+      </S.ImageWrapper>
     </S.Wrapper>
   );
 };

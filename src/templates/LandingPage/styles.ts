@@ -21,7 +21,7 @@ export const Background = styled.div`
 `;
 
 export const SectionOne = styled.div`
-  margin-top: 11rem;
+  margin-top: 16rem;
 `
 
 export const SectionTwo = styled.div`
