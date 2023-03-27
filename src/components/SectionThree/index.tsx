@@ -20,11 +20,12 @@ const SectionThree = () => {
     "foto do caminhão rebocando dois carros juntos",
     "foto do caminhão rebocando um carro rebaixado",
   ];
-  const [imageNumber, setImageNumber] = useState(0);
+  const [imageNumber, setImageNumber] = useState(1);
 
   const handleImage = () => {
-    if (imageNumber >= 12) setImageNumber(0);
+    if (imageNumber > 11) setImageNumber(0);
     else setImageNumber((imageNumber) => imageNumber + 1);
+    console.log(imageNumber)
   };
 
   return (

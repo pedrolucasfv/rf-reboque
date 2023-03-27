@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import { CloseOutline as InstagramIcon } from "@styled-icons/evaicons-outline/CloseOutline";
+import { Instagram as InstagramIcon } from "@styled-icons/bootstrap/Instagram";
 import Image from "next/image";
 
 const Footer = () => (
@@ -18,21 +18,21 @@ const Footer = () => (
         </S.Text>
       </S.ContentInfo>
       <S.ContentInfo>
-        <S.Heading type="tertiary">Redes Sociais</S.Heading>
-        <S.SocialNetwork>
-        <InstagramIcon size={50} />
+        <S.Heading type="secondary">Redes Sociais</S.Heading>
+        <S.SocialNetwork href="https://www.instagram.com/rf.reboque/">
+          <InstagramIcon size={50} />
         </S.SocialNetwork>
       </S.ContentInfo>
     </S.Info>
-   
+
     <S.ImageWrapper>
-        <Image
-          src='/img/logo.jpg'
-          alt='Logo da RF reboque'
-          layout="fill"
-          objectFit="cover"
-        />
-      </S.ImageWrapper>
+      <Image
+        src="/img/logo.jpg"
+        alt="Logo da RF reboque"
+        layout="fill"
+        objectFit="cover"
+      />
+    </S.ImageWrapper>
     <S.CopyrightContent>
       <S.Copyright>RF REBOQUE 2023 © Todos direitos reservados</S.Copyright>
       <S.Copyright>

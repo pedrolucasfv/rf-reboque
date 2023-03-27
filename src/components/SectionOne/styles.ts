@@ -27,14 +27,14 @@ export const Wrapper = styled.main`
       padding-top: 7rem;
     `}
     @media (min-width: 1500px) {
-    padding: 0 29rem;
+    padding: 0 20rem;
   }
   border-top: 0.5rem solid ${theme.colors.secondary};
   border-bottom: 0.5rem solid ${theme.colors.secondary};
 `;
 
 export const Text = styled.h2`
-  font-size: 1rem;
+  font-size: 2rem;
   margin-bottom: 5rem;
   font-weight: 500;
   @media (min-width: 1500px) {
@@ -85,7 +85,7 @@ export const Heading = styled.h2`
   `}
 `;
 export const Info = styled.div`
-  grid-column: 1/3;
+  grid-column: 2;
   grid-row: 2;
   display: flex;
   flex-direction: column;

@@ -55,10 +55,14 @@ export const Subtitle = styled.h3`
   `}
 `;
 
-export const SocialNetwork = styled.div`
+export const SocialNetwork = styled.a`
+  ${({ theme }) => css`
   display: flex;
   justify-content: space-around;
   margin-bottom: 1.5rem;
+  color: ${theme.colors.primary};
+  `}
+
 `;
 
 export const ImageWrapper = styled.div`
@@ -82,7 +86,7 @@ export const ImageWrapper = styled.div`
 
 
 type HeadingProps = {
-  type: "primary" | "secondary" | "tertiary" | "quaternary";
+  type: "primary" | "secondary"
 };
 
 export const Heading = styled.h2<HeadingProps>`
@@ -104,14 +108,6 @@ export const Heading = styled.h2<HeadingProps>`
       ${type == "secondary" &&
       css`
         border-color: ${theme.colors.secondary};
-      `}
-      ${type == "tertiary" &&
-      css`
-        border-color: ${theme.colors.tertiary};
-      `}
-      ${type == "quaternary" &&
-      css`
-        border-color: ${theme.colors.quaternary};
       `}
     }
   `}
