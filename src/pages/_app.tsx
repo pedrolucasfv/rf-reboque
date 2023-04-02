@@ -10,6 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>RF Reboque - Apiacá/ES</title>
         <meta name="theme-color" content="#BC1821" />
+        <meta name="google-site-verification" content="8Dpgeq41frarS-Qq2SEDGAWUQmwhgYDQabCZijLhXog" />
         <link rel="shortcut icon" href="/img/logo.jpg" />
         <meta
           name="description"
