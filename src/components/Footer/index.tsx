@@ -14,6 +14,9 @@ const Footer = () => (
           <span>Cidade:</span> Apiacá
         </S.Text>
         <S.Text>
+          <span>Estado:</span> Espirito Santo
+        </S.Text>
+        <S.Text>
           <span>Cep:</span> 29450-000
         </S.Text>
       </S.ContentInfo>

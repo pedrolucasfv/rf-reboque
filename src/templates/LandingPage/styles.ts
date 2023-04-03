@@ -16,7 +16,7 @@ export const Background = styled.div`
   bottom: 0%;
   right: 0%;
   z-index: -10;
-  background: url("/img/background-fix.jpg");
+  background: url("/img/background-fix-2.jpg");
   background-position: center;
   background-size: cover;
 `;
