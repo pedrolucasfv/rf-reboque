@@ -8,24 +8,23 @@ import Image from "next/image";
 const SectionThree = () => {
   const alt = [
     "foto do caminhão rebocando dois carros juntos",
-    "foto do caminhão rebocando um outro caminhão com a equipe RF reboque ao lado",
-    "foto do caminhão rebocando uma picape",
+    "foto do caminhão rebocando um outro caminhão com a equipe RF reboque ao lado na cidade de teresópolis",
+    "foto de uma picape em cima de um caminhão guincho em Apiacá",
     "foto do caminhão rebocando um carro clássico vermelho",
     "foto do caminhão rebocando um carro clássico vermelho no ângulo da frente",
-    "foto de um bebêzinho dentro do caminhão reboque",
+    "foto de um bebêzinho dentro do caminhão guincho",
     "foto do caminhão rebocando um outro caminhão guincho",
     "foto do caminhão rebocando um outro caminhão guincho no ângulo da frente",
     "foto do caminhão rebocando um fusca com uma carretinha",
     "foto do caminhão rebocando um outro caminhão",
     "foto do caminhão rebocando dois carros juntos",
-    "foto do caminhão rebocando um carro rebaixado",
+    "foto de um carro rebaixo em cima de um caminhão guincho",
   ];
   const [imageNumber, setImageNumber] = useState(1);
 
   const handleImage = () => {
     if (imageNumber > 11) setImageNumber(0);
     else setImageNumber((imageNumber) => imageNumber + 1);
-    console.log(imageNumber)
   };
 
   return (
