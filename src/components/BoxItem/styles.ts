@@ -16,7 +16,6 @@ export const Wrapper = styled.main`
     padding: 2rem 1rem;
     border: 0.4rem solid ${theme.colors.secondary};
     width: 35rem;
-    height: 25rem;
     display: flex;
     flex-direction: column;
     @media (max-width: 400px) {
